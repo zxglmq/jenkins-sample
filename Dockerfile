@@ -1,5 +1,8 @@
 FROM golang:1.21-alpine
 
+
+ENV GO111MODULE=off
+
 ADD . /go/src/app
 
 WORKDIR /go/src/app
